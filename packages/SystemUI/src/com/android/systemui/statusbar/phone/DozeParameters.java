@@ -89,7 +89,6 @@ public class DozeParameters implements
 
     private final Set<Callback> mCallbacks = new HashSet<>();
 
-    private boolean mDozeAlwaysOn;
     private boolean mControlScreenOffAnimation;
     private boolean mIsQuickPickupEnabled;
 
@@ -268,7 +267,7 @@ public class DozeParameters implements
      * @return {@code true} if enabled and available.
      */
     public boolean getAlwaysOn() {
-        return mDozeAlwaysOn && !mBatteryController.isAodPowerSave();
+        return mAmbientDisplayConfiguration.alwaysOnEnabled(UserHandle.USER_CURRENT) && !mBatteryController.isAodPowerSave();
     }
 
     /**
@@ -434,8 +433,6 @@ public class DozeParameters implements
 
     @Override
     public void onTuningChanged(String key, String newValue) {
-        mDozeAlwaysOn = mAmbientDisplayConfiguration.alwaysOnEnabled(mUserTracker.getUserId());
-
         if (key.equals(Settings.Secure.DOZE_ALWAYS_ON)) {
             updateControlScreenOff();
         }
