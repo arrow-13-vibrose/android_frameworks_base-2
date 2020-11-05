@@ -102,6 +102,9 @@
     <java-symbol type="string" name="poweroff_alarm_body" />
     <java-symbol type="drawable" name="ic_alarm_on" />
 
+     <!-- Horizon Light -->
+    <java-symbol type="integer" name="config_AmbientPulseLightColor" />
+
     <!-- More battery styles -->
     <java-symbol type="string" name="config_batterymeterLandPerimeterPathBuddy" />
     <java-symbol type="string" name="config_batterymeterLandFillMaskBuddy" />
