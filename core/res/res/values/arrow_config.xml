@@ -115,5 +115,8 @@
     <!-- InputFilter Class-->
     <string name="config_deviceInputFilterLibs" translatable="false"></string>
     <string name="config_deviceInputFilterClasses" translatable="false"></string>
+ 
+    <!-- Default value for Horizon light color (Blue) -->
+    <integer name="config_AmbientPulseLightColor">0x3980FF</integer>
 
 </resources>
