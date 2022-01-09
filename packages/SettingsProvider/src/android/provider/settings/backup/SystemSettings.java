@@ -90,5 +90,10 @@ public class SystemSettings {
         Settings.System.NETWORK_TRAFFIC_STATE,
         Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD,
         Settings.System.ENABLE_RIPPLE_EFFECT,
+        Settings.System.EDGE_LIGHT_ENABLED,
+        Settings.System.EDGE_LIGHT_ALWAYS_TRIGGER_ON_PULSE,
+        Settings.System.EDGE_LIGHT_REPEAT_ANIMATION,
+        Settings.System.EDGE_LIGHT_COLOR_MODE,
+        Settings.System.EDGE_LIGHT_CUSTOM_COLOR,
     };
 }
