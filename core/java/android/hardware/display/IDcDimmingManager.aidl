@@ -28,3 +28,5 @@ interface IDcDimmingManager {
 
     boolean isDcDimmingOn();
 }
+
+</resources>
