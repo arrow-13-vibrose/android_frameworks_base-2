@@ -248,4 +248,7 @@
     </string>
     <string name="config_batterymeterLandPowersavePathMiUIPill" translatable="false">@string/config_batterymeterLandPerimeterPathMiUIPill</string>
     <string name="config_batterymeterLandErrorPerimeterPathMiUIPill" translatable="false">@string/config_batterymeterLandPerimeterPathMiUIPill</string>
+
+    <!-- Default value for QS_TRANSPARENCY -->
+   <integer name="config_qs_transparency">85</integer>
 </resources>
