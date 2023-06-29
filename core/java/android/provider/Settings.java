@@ -5730,6 +5730,12 @@ public final class Settings {
         public static final String SMART_5G = "smart_5g";
 
        /**
+         * Lockscreen clock format
+         * @hide
+         */
+        public static final String CLOCK_USE_CUSTOM_FORMAT = "clock_use_custom_format";
+
+       /**
          * These are all public system settings
          *
          * @hide
