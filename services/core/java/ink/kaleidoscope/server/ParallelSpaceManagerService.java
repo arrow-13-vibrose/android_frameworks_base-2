@@ -83,6 +83,17 @@ public final class ParallelSpaceManagerService extends SystemService {
     private static final String TAG = "ParallelSpaceManagerService";
 
     /**
+     * By default, only non-launchable system apps will be initially installed in
+     * a new space. Here you can explicitly configure for this.
+     */
+    private static final List<String> SPACE_BLOCKLIST_PACKAGES = Arrays.asList(
+        // To avoid third party apps starting it accidentally.
+        "com.android.launcher3",
+        "com.google.android.apps.nexuslauncher",
+        "com.google.android.projection.gearhead"
+    );
+
+    /**
      * Components should be disabled on space setup.
      */
     private static final List<String> SPACE_BLACKLIST_COMPONENTS = Arrays.asList(
