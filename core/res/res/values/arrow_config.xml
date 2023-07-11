@@ -100,4 +100,6 @@
     <string name="config_deviceInputFilterLibs" translatable="false"></string>
     <string name="config_deviceInputFilterClasses" translatable="false"></string>
 
+    <!-- Default value for QS_TRANSPARENCY -->
+   <integer name="config_qs_transparency">85</integer>
 </resources>
